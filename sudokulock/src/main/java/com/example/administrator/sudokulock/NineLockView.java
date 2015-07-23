@@ -24,7 +24,6 @@ public class NineLockView extends View {
     private PasswordInputComplete passwordInputCompleteListener=null;
     boolean firstDraw=true;
     boolean moveEnable=false;//只有当点击了圆点后才可以滑动
-    boolean drawcheckLine=false;
     int currentCheckedBoxIndex=-1;
     float curX,curY;
     ArrayList<Integer> checkedBoxPath=new ArrayList<>();
@@ -51,7 +50,7 @@ public class NineLockView extends View {
         //自定义九宫格密码锁控件的宽度为match_parent，高度为三个格子的高度+三个格子之间的间距之和，三个格子的高度为三个被选中后的格子的大小，而不是正常状态的格子的大小，因为被选中后我会将格子的大小放大
         int marginX = (getMeasuredWidth()-3*styleConfig.getBoxRadius())/4;
         int measuredHeight=(styleConfig.getBoxRadius()+styleConfig.getBoxRange())*3+marginX*2;
-        setMeasuredDimension(getMeasuredWidth(),measuredHeight);
+        setMeasuredDimension(getMeasuredWidth(), measuredHeight);//设置高度和宽度
     }
 
     public void configStyle(StyleConfig styleConfig){
