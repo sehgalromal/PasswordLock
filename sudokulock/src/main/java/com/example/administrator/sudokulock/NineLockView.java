@@ -77,7 +77,7 @@ public class NineLockView extends View {
             left=marginX;
             top+=styleConfig.getBoxRadius()+marginY;
         }
-        vibrator= (Vibrator) getContext().getSystemService(Service.VIBRATOR_SERVICE);
+        vibrator = (Vibrator) getContext().getSystemService(Service.VIBRATOR_SERVICE);//获取震动器服务
 
         normalPaint=new Paint();//九宫格中每一格正常的时候背景笔刷
         normalPaint.setColor(styleConfig.getBoxNormalColor());
@@ -187,7 +187,7 @@ public class NineLockView extends View {
                 StringBuilder password=new StringBuilder();
                 for(int i=0;i<checkedBoxPath.size();i++){
                     password.append(checkedBoxPath.get(i));
-                    Log.i("TAG",""+checkedBoxPath.get(i));
+                    Log.i("TAG", checkedBoxPath.get(i) + "");
                 }
                 Log.i("TAG","password:"+password);
                 if(passwordInputCompleteListener!=null){
