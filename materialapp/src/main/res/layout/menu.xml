@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#ffd5ff48"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="172dp"-->
+    <!--android:background="@drawable/drawer_background"/>-->
+    <TextView
+        style="@style/LightMenuStyle"
+        android:id="@+id/menuText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="菜单" />
+
+    <TextView
+        style="@style/LightMenuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置" />
+
+    <TextView
+        style="@style/LightMenuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="爱情" />
+
+    <TextView
+        style="@style/LightMenuStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="退出" />
+</LinearLayout>

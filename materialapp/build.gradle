@@ -1,0 +1,31 @@
+apply plugin: 'com.android.library'
+
+
+
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "23.0.0 rc3"
+
+    defaultConfig {
+//        applicationId "com.example.administrator.materialapp"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.2.1'
+    compile 'com.android.support:design:22.2.1'
+}
+//apply plugin: 'com.android.library' 表示这个module为库项目，那么下面的defaultConfig节点下不能有applicationId
+//apply plugin: 'com.android.application' 表示这个项目为正常的应用程序项目，下面的defaultConfig节点需要有applicationId
